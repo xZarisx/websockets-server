@@ -1,0 +1,24 @@
+env:
+  jest/globals: true
+  browser: true
+extends:
+  - standard
+  - standard-jsx
+  - prettier
+parser: babel-eslint
+plugins:
+  - jest
+  - babel
+  - react-hooks
+  - prettier
+rules:
+  prefer-promise-reject-errors:
+    - off
+  prettier/prettier:
+    - error
+  react-hooks/rules-of-hooks:
+    - error
+  react-hooks/exhaustive-deps:
+    - warn
+  react/jsx-indent:
+    - off
